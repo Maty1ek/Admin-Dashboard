@@ -1,0 +1,102 @@
+.main_content_con {
+    background-color: var(--used-gray);
+    padding: 60px 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 60px 20px;
+}
+
+.main_content_con h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card, 
+.announcements,
+.trending {
+    background-color: #fff;
+}
+
+.cards_con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+    gap: 20px;
+}
+
+.card {
+    padding: 30px 25px;
+    border-radius: 10px;
+    display: grid;
+    background: linear-gradient(90deg, #93c5fd 2.5%, #ffffff 0%);
+}
+
+.main_content_con>div[class$='con'] {
+    position: relative;
+}
+
+.main_titles {
+    position: absolute;
+    top: -35px;
+}
+
+.card_info p {
+    color: #6b6b6b;
+    line-height: 17px;
+    margin-top: 10px;
+}
+
+.card_icons {
+    align-self: end;
+    justify-self: end;
+}
+
+.card_icons i {
+    padding: 0 10px;
+    font-size: 22px;
+    color: #656565;
+}
+
+.projects_con {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.announcements {
+    background-color: #fff;
+    padding:  20px 30px;
+    border-radius: 10px;
+    display: grid;
+    height: 100%;
+    align-items: center;
+}
+
+.announcement_item {
+    font-size: 80%;
+    position: relative;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.trending {
+    padding: 10px 25px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.trending_acc {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+}
+
+.trending_acc img {
+    width: 50px;
+}
